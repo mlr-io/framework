@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
+<header>
+  <img src="http://mlr.io/img/logo.svg"/>
+</header>
+<nav>
+  {{#link-to 'register'}}register{{/link-to}}
+  {{#link-to 'sign-in'}}sign-in{{/link-to}}
+</nav>
 
-{{outlet}}
+<main>
+  {{outlet}}
+</main>

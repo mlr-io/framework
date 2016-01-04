@@ -1,0 +1,13 @@
+<section class="card scaffolding">
+  {{!-- <h1 class="holograph red">User Profile</h1> --}}
+  {{user-comp user=model}}
+</section>
+
+<h1 class="holograph scaffolding card">{{model.name}} is a member of these teams</h1>
+
+{{#each team in model.teams}}
+  {{log team}}
+  <section class="card scaffolding">
+    {{team-comp team=team compact=true}}
+  </section>
+{{/each}}

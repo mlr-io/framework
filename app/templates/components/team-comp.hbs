@@ -1,0 +1,11 @@
+<div class="team {{if compact 'compact'}}">
+  <img class="logo" src="{{team.logo}}" alt="Team {{team.name}} logo"/>
+  <h2 class="name">{{team.name}}</h2>
+  <p class="location">{{team.location}} | {{team.organization}}</p>
+
+  <ul class="leagues">
+    {{#each league in team.leagues}}
+      <li class="league tag">{{league}}</li>
+    {{/each}}
+  </ul>
+</div>
